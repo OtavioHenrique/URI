@@ -1,0 +1,103 @@
+#include <cstdlib>
+#include <iomanip>
+#include <iostream>
+int main()
+{
+	using namespace std;
+	int x, y, q, w, h1, h2, h3, h4, h5, h6, h7, h8, m8, m7, m1, m2, m3, m4, m5, m6;
+	cin>>x>>q>>y>>w;
+	if (x==y && w==q)
+		{
+			cout<<"O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)"<<endl;
+		}
+			else 
+			{
+				if (x>y && q>w)
+				{
+					h2= (23-x)+y;
+					m2= (60-q)+w;
+					cout<<"O JOGO DUROU "<<h2<<" HORA(S) E "<<m2<<" MINUTO(S)"<<endl;
+				}
+				 	else 
+				 	{
+				 		if (x>y && q<w)
+				 		{
+				 			h3=(24-x)+y;
+				 			m3=(w-q);
+				 			cout<<"O JOGO DUROU "<<h3<<" HORA(S) E "<<m3<<" MINUTO(S)"<<endl;
+						}
+						  
+						  else 
+						  {
+						  		if (y>x && q>w)
+						  		{
+						  			h4=((y-x)-1);
+						  			m4=(60-q)+w;
+						  			cout<<"O JOGO DUROU "<<h4<<" HORA(S) E "<<m4<<" MINUTO(S)"<<endl;
+								}
+						
+						  			else 
+						  			{
+						  				if (y>x && w>q)
+						  				{
+										
+						  					h1=(y-x);
+						  					m1=(w-q);
+						  					cout<<"O JOGO DUROU "<<h1<<" HORA(S) E "<<m1<<" MINUTO(S)"<<endl;
+						  				
+										}
+						  				else 
+						  				{
+						  					if (x>y && w==q)
+						  					{
+											
+						  						h5=(24-x)+y;
+						  						m5=(q-w);
+						  						cout<<"O JOGO DUROU "<<h5<<" HORA(S) E "<<m5<<" MINUTO(S)"<<endl;
+						  					
+											}
+											  
+						  					else 
+						  					{
+						  						if (y>x && q==w)
+						  						{
+						  							h6=(y-x)*60/60;
+						  							m6=(q-w);
+						  							cout<<"O JOGO DUROU "<<h6<<" HORA(S) E "<<m6<<" MINUTO(S)"<<endl;
+												}
+						  						
+						  						else 
+						  						{
+						  							if (x==y && q>w)
+						  							{
+													
+						  								h7=(23-x)+y;
+						  								m7=((60-q)+w);
+						  								cout<<"O JOGO DUROU "<<h7<<" HORA(S) E "<<m7<<" MINUTO(S)"<<endl;
+						  							
+													}
+						  							
+						  							 else 
+						  							 {
+						  							 	if (y==x && w>q)
+						  							 	h8=(y-x);
+						  							 	m8=(w-q);
+						  							 	cout<<"O JOGO DUROU "<<h8<<" HORA(S) E "<<m8<<" MINUTO(S)"<<endl;
+						  							 	
+						  							 	
+													}
+						  							
+												}
+						  						
+											}
+						  				
+						  					
+										}		
+									}
+						  }
+				     }
+			}
+				
+	return(0);
+	
+}
