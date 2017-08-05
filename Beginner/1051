@@ -1,0 +1,48 @@
+#include <cstdlib>
+#include <iomanip>
+#include <iostream>
+int main()
+{
+	using namespace std;
+	float x, i1, i2, i3;
+	cin>>x;
+	
+	if (x<=2000.00)
+	{
+		cout<<"Isento"<<endl;
+	}
+		else 
+			{
+				if (x>2000.00 && x<=3000.00)
+				{
+					i1=((x-2000.00)*0.08);
+					cout<<fixed<<setprecision(2)<<"R$ "<<i1<<endl;
+				}
+					else 
+					{
+						if (x>3000.00 && x<=4500.00)
+						{
+							i2= (80 + (x-3000.00)*0.18);
+							cout<<fixed<<setprecision(2)<<"R$ "<<i2<<endl;
+						}
+							else 
+							{
+								if (x>4500)
+								{
+								
+								i3= (80+270+(x-4500)*0.28);
+								cout<<fixed<<setprecision(2)<<"R$ "<<i3<<endl;
+								
+								}
+
+							}
+	
+						
+					}
+				
+				
+			}
+
+	
+	return(0);
+}
