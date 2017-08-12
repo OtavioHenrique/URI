@@ -3,23 +3,19 @@
 #include <iomanip>
 #include <math.h> 
 
+double totalSalary (double totalSales, double salary) {
+  return ((totalSales*15)/100) + salary;
+}
+
 using namespace std;
 
-
-   string funcionario;
-  double SALARYF;
-  double TTLVENDAS;
-   double SALARY;
 int main () {
+  string employee;
+  double totalSales, salary;
+
+	cin>>employee>>salary>>totalSales;
 	
-	cin>>funcionario>>SALARY>>TTLVENDAS;
-	
-	
-	  SALARYF = (TTLVENDAS*15/100) + SALARY; 
-	
-	
-	cout<<fixed<<setprecision(2)<<"TOTAL = R$ "<<SALARYF<<endl;
-	
+	cout<<fixed<<setprecision(2)<<"TOTAL = R$ "<<totalSalary(totalSales, salary)<<endl;
 	
 	return 0;
 }

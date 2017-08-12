@@ -1,25 +1,20 @@
 #include <iostream>
 #include <stdio.h>
-#include <iomanip>
-#include <math.h> 
+#include <iomanip> 
+
+double salary (int hours, int number) {
+  return hours * number;
+}
 
 using namespace std;
 
-
-   int funcionario;
-  double SALARY;
-  double NUMBER;
-   int HORAS;
 int main () {
+  int employee, hours, number;
+ 	
+	cin>>employee>>hours>>number;
 	
-	cin>>funcionario>>HORAS>>NUMBER;
-	
-	
-	  SALARY = HORAS * NUMBER;
-	
-	cout<<"NUMBER = "<<funcionario<<endl;
-	cout<<fixed<<setprecision(2)<<"SALARY = U$ "<<SALARY<<endl;
-	
-	
+	cout<<"NUMBER = "<<employee<<endl;
+	cout<<fixed<<setprecision(2)<<"SALARY = U$ "<<salary(hours, number)<<endl;
+		
 	return 0;
 }

@@ -7,18 +7,15 @@ using namespace std;
 
 
 	int A;
-    int B;
-    int resultado;
+  int B;
+  int result;
 
 int main () {
 	
 	cin>>A>>B;
 	
+	result = A + B;
 	
-	resultado = A + B;
-	
-	cout<<"SOMA = "<<resultado<<endl;
-	
-	
+	cout<<"SOMA = "<<result<<endl;
 	
 }
